@@ -1,1 +1,1 @@
-# detsky-eshop.cz
+# meradog.cz

@@ -10,7 +10,7 @@
     height: 100%;
 }
 .m-productCell__link{
-    padding: 0px 0px 20px 0px;
+    padding: 20px;
     z-index: 2;
     position: relative;
     background: $bg-white;
@@ -88,8 +88,8 @@
 }
 .m-productCell__price{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
     padding-right: 10px;

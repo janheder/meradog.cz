@@ -31,7 +31,7 @@
 /* ========================================================================== */
 
 .m-heroCarousel{
-    height: 420px;
+    height: 510px;
     background: $bg-light;
     overflow: hidden;
     border-radius: $border-radius-primary;
@@ -63,7 +63,7 @@
 }
 .m-heroCarousel__img{
     z-index: -1;
-    object-fit: contain;
+    object-fit: cover;
 }
 .m-heroCarousel__preloader{
     width: 100%;

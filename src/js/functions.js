@@ -619,7 +619,7 @@ $('.m-productCarousel').each(function(index, element){
         autoplay: false,
         spaceBetween: 20,
         grabCursor: true,
-        slidesPerView: 3,
+        slidesPerView: 4,
         zoom: false,
         loop: false,
         pagination: false,
