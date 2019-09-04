@@ -1,0 +1,17 @@
+.o-sectionCategories{
+    background: $bg-white;
+    position: relative;
+
+    &::after{
+        content: "";
+        background: url("../img/border-stripes.svg");
+        height: 5px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+.o-sectionCategories__title{
+
+}

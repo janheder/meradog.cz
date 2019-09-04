@@ -1,0 +1,82 @@
+.o-sectionPoints{
+    padding: 6rem 0 6rem 0;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    &::after{
+        content: "";
+        background: url("../img/border-stripes.svg");
+        height: 5px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+.o-sectionPoints__wrap{
+    background: transparent;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.o-sectionPoints__single{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 10px 0;
+
+    &:nth-child(2) .o-sectionPoints__imgWrap{
+        background: $green;
+    }
+    &:nth-child(3) .o-sectionPoints__imgWrap{
+        background: $orange;
+    }
+    &:nth-child(4) .o-sectionPoints__imgWrap{
+        background: $pink;
+    }
+}
+.o-sectionPoints__imgWrap{
+    background: $blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    width: 64px;
+    border-radius: $border-radius-round;
+
+
+}
+.o-sectionPoints__img{
+    width: 34px;
+}
+.o-sectionPoints__titleWrap{
+    margin: 10px 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.o-sectionPoints__title, .o-sectionPoints__text{
+    font-size: 16px;
+    margin: 0;
+    color: $text-primary;
+    font-weight: 500;
+}
+
+.o-sectionPoints__title{
+    font-weight: 700;
+}
+
+
+@media screen and (max-width: 991px){
+    .o-sectionPoints{
+        display: none;
+    }  
+}

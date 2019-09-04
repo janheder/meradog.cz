@@ -1,0 +1,36 @@
+.o-header{
+    background: $bg-primary;
+    // box-shadow: $box-shadow-primary;
+    position: relative;
+    z-index: 4;
+    padding-top: 5px;
+
+    &::after{
+        content: "";
+        background: url("../img/border-stripes.svg");
+        height: 5px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+
+.o-header.-cart{
+    & .m-navToggler, & .m-navSearchToggler{
+        display: none;
+    }
+    .m-navLogo__link{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:991px){
+    .o-header{
+        padding: 0;
+        &::after{
+            content: none;
+        }
+    }
+}

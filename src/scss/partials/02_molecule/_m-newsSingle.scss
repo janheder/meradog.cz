@@ -1,0 +1,105 @@
+.m-newsSingle{
+    background: transparent;
+    color: $text-primary;
+    overflow: hidden;
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+
+    &:hover, &:active, &:focus{
+        color: $text-primary;
+        text-decoration: none;
+
+        .m-newsSingle__img{
+           opacity: 0.8;
+        }
+    }
+}
+.m-newsSingle__top{
+    position: relative;
+    min-height: 140px;
+    width: 200px;
+    background: $bg-light;
+    overflow: hidden;
+    border-radius: $border-radius-primary;
+    flex-shrink: 0;
+}
+.m-newsSingle__img{
+    z-index: 0;
+    transition: 0.5s ease all;
+}
+.m-newsSingle__dateWrap{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0,0,0,0.5);
+    padding: 0px 12px;
+    height: 30px;
+    border-radius: $border-radius-primary;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.m-newsSingle__date{
+    @include f-14-dark-regular;
+    font-size: 13px;
+    color: $text-medium;
+    padding: 10px 0;
+}
+.m-newsSingle__bottom{
+    padding: 1.5rem 0;
+    background: transparent;
+    flex-grow: 1;
+    padding-left: 20px;
+}
+.m-newsSingle__title{
+    font-size: 20px;
+    overflow: hidden;
+    margin: 0;
+}
+.m-newsSingle__text{
+    font-size: 14px;
+}
+@media screen and (max-width:991px){
+    .m-newsSingle__top{
+        min-height: 200px;
+    } 
+}
+@media screen and (max-width:768px){
+    .m-newsSingle{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px 0;
+    } 
+    .m-newsSingle__top{
+        width: 100%;
+        min-height: 200px;
+        flex-shrink: 0;
+    }
+    .m-newsSingle__bottom{
+        flex-grow: 1;
+        padding: 0;
+        padding-top: 10px;
+    }
+    .m-newsSingle__title {
+        max-height: 4.5rem;
+        font-size: 16px;
+        overflow: hidden;
+        height: auto;
+    }
+    .o-sectionNews__btnWrap{
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 575px){
+    .m-newsSingle{
+        flex-direction: column;
+    } 
+    .m-newsSingle__top{
+        width: 100%;
+        min-height: 160px;
+        flex-shrink: 0;
+    }
+}

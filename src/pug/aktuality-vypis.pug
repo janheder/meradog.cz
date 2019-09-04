@@ -1,0 +1,37 @@
+doctype html
+include partials/_variables.pug  
+html(lang=lang)
+    include partials/_header.pug  
+    body
+        include partials/_modal-login.pug
+        header.o-header
+            include partials/_navMain.pug
+        .container
+            .row
+                .col-12.col-md-3
+                    .navProducts__toggle Menu kategorií
+
+                    .navProducts--absolute
+                        include partials/_navProducts.pug
+                .col-12.col-md-9    
+                    include partials/_breadcrumb.pug
+
+        section.o-pageHeading
+
+            .container.o-pageHeading__container
+                h1.o-pageHeading__title Aktuality
+
+        main
+            .container
+                .row                                       
+                    - for (var i=0; i<10; i++)
+                        .col-12.col-sm-12.col-md-12
+                            include partials/_news-single.pug
+
+
+                include partials/_pagination.pug
+
+
+        include partials/_footer.pug
+
+        include partials/_js-include.pug

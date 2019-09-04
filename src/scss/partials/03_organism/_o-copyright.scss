@@ -1,0 +1,47 @@
+.o-copyright{
+    background: $bg-primary;
+    padding: 2rem 0;
+}
+.o-copyright__wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.o-copyright__h5{
+    @include f-14-white-regular;
+    font-weight: 500;
+    flex-grow: 1;
+    margin: 0;
+}
+.o-copyright__link{
+    @include f-14-white-regular;
+    opacity: 0.8;
+    font-weight: 500;
+
+    &:hover, &:active, &:focus{
+        color: $text-white;
+        opacity: 1;
+    }
+}
+.o-copyright__pull{
+    @include f-14-white-regular;
+    margin: 0;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width:768px){
+    .o-copyright{
+        text-align: center;
+    }
+    .o-copyright__wrap{
+        flex-direction: column;
+    }
+    .o-copyright__pull{
+        float: right;
+        line-height: 1.8;
+        margin: 0;
+    }
+}
