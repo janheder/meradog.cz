@@ -1,5 +1,6 @@
 .o-copyright{
-    background: $bg-primary;
+    background: $bg-light;
+    border-bottom: 34px solid $bg-red;
     padding: 2rem 0;
 }
 .o-copyright__wrap{
@@ -11,22 +12,25 @@
 }
 .o-copyright__h5{
     @include f-14-white-regular;
+    color: $text-primary;
     font-weight: 500;
     flex-grow: 1;
     margin: 0;
 }
 .o-copyright__link{
     @include f-14-white-regular;
+    color: $text-primary;
     opacity: 0.8;
     font-weight: 500;
 
     &:hover, &:active, &:focus{
-        color: $text-white;
+        color: $text-primary;
         opacity: 1;
     }
 }
 .o-copyright__pull{
     @include f-14-white-regular;
+    color: $text-primary;
     margin: 0;
     font-weight: 500;
 }

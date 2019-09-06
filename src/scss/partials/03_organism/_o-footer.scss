@@ -1,5 +1,5 @@
 .o-footer{
-    background: $bg-primary;
+    background: $bg-light;
 }
 
 /* ========================================================================== */
@@ -7,101 +7,122 @@
 /* ========================================================================== */
 
 .o-footerContacts{
-    padding: 6rem 0;
-    background: #0D0F17;
+    padding: 0;
+    border-bottom: 1px solid $border-grey;
 }
-.o-footerContacts__caption{
-    display: flex;
-    color: $text-white;
-    margin-top: 5rem;
+.o-footerContacts__col:first-child{
+    border-right: 1px solid rgba(255,255,255,0.1);
 }
-.o-footerContacts__captionText{
-    margin-left: 1rem;
-    line-height: 1.5;
+
+.m-emailSubscribe{
+    padding: 6rem 4rem 6rem 0;
 }
-.o-footerContacts__col:last-child{
-    border-left: 1px solid rgba(255,255,255,0.1);
-    padding-left: 6rem;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+.m-emailSubscribe__title{
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: $text-primary;
+    margin-bottom: 2rem;
 }
-.o-footerContacts__title{
-    font-size: 2rem;
-    font-weight: 400;
-    color: $text-white;
-    margin-bottom: 1rem;
-    margin-top: 0rem;
-}
-.o-footerContacts__wrap{
-    display: flex;
-    flex-direction: row;
-}
-.o-footerContacts__single{
+.m-emailSubscribe__text{
     font-size: 1.6rem;
-    font-weight: 700;
-    color: $text-white;
-    margin: 1rem 2rem 1rem 0;
-    padding: 1.5rem 3rem;
-    background: rgba(255,255,255,0.1);
-    border-radius: $border-radius-primary;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 3rem;
 }
-.o-footerContacts__icon{
-    margin-right: 10px;
-    height: 15px;
+.m-emailSubscribe__inputWrap{
+    position: relative;
 }
-.o-footerContacts__Socialwrap{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.m-emailSubscribe__input{
+    height: 5.4rem;
+    width: 100%;
+    border-radius: 5.4rem;
+}
+.m-emailSubscribe__btn{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    min-height: 5rem;
+    height: auto;
+}
+.m-emailSubscribe__agree{
     margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
 }
-.o-footerContacts__socialIcon{
-    margin-right: 10px;
-    height: 30px;
-    width: 30px;
-}
-.o-footerContacts__socialName{
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: $text-white;
-    margin: 0;
-}
-@media screen and (max-width:768px){
-    .o-footerContacts{
-        padding: 20px 0;
-    }
-    .o-footerContacts__col{
-        padding: 0 10px 10px 10px;
-    }
-    .o-footerContacts__col:last-child{
-        padding: 20px 10px 0 10px;
+.m-emailSubscribe__inlineText{
+    font-size: 14px;
+    margin-left: 1rem;
+    font-weight: 500;
+
+    a{
+        color: $text-primary;
+        font-size: 14px;
+        font-weight: 500;
     }
 }
 
-@media screen and (max-width:500px){
-    .o-footerContacts__col{
+.m-emailSubscribe__check{
+    opacity: 0;
+    position: absolute;
+}
+.m-emailSubscribe__checkbox{
+    display: block;
+    height: 14px;
+    width: 14px;
+    background: $bg-white;
+    border-radius: $border-radius-primary;
+    position: relative;
+    flex-shrink: 0;
+}
+.m-emailSubscribe__check:checked + .m-emailSubscribe__checkbox{
+    background: $bg-brand-secondary;
+
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 2px;
+        right: 0;
+        bottom: 0;
+        left: 5px;
+        width: 4px;
+        height: 8px;
+        border: solid #fff;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+}
+
+.m-questionsContact{
+    padding: 6rem 0 6rem 4rem;
+}
+.m-questionsContact__title{
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: $text-primary;
+}
+.m-questionsContact__contactWrap{
+    display: flex;
+}
+.m-questionsContact__contact{
+    font-size: 1.6rem;
+    font-weight: 500;
+    background: $bg-white;
+    border-radius: 5.4rem;
+    padding: 1.5rem 2rem;
+    display: inline-block;
+    margin: 0;
+    margin-right: 10px;
+
+    &.-facebook{
+        background: $blue;
+        border-radius: 50%;
+        width: 5.4rem;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0 10px 20px 10px;
-    }
-    .o-footerContacts__col:last-child{
-        border-top: 1px solid rgba(255,255,255,0.1);
-        padding: 20px 10px 0 10px;
-    }
-    .o-footerContacts__wrap{
-        flex-direction: column;
-        align-items: center;
-    }
-    .o-footerContacts__single{
-        margin: 0;
-        margin-top: 10px; 
     }
 }
 
@@ -113,16 +134,17 @@
     padding-top: 2rem;
 }
 .o-footerMain__title{
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
-    color: $text-white;
+    color: $text-primary;
     margin-bottom: 1rem;
     margin-top: 4rem;
     padding-bottom: 1rem;
     position: relative;
+    font-weight: 500;
 }
 .o-footerMain__link{
-    color: $text-white;
+    color: $text-primary;
     display: block;
     font-size: 1.4rem;
     font-weight: 500;
@@ -131,13 +153,13 @@
     opacity: 0.7;
 
     &:hover, &:active, &:focus{
-        color: $text-white;
+        color: $text-primary;
         text-decoration: underline;
         opacity: 1;
     }
 }
 .o-footerMain__text{
-    color: $text-white;
+    color: $text-primary;
     display: block;
     font-size: 1.4rem; 
     line-height: 3.6rem;
