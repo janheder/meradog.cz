@@ -22,3 +22,15 @@
         box-shadow: $box-shadow-primary;
     }
 }
+
+.heroRow{
+    flex-wrap: nowrap;
+}
+.navMainCol{
+    max-width: 280px;
+    padding-top: 50px;
+    flex-shrink: 0;
+}
+.heroCol{
+    flex-grow: 1;
+}

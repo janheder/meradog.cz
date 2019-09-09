@@ -38,7 +38,7 @@
 }
 .m-tabsNav__link.active{
     background: transparent;
-    color: $blue;
+    color: $text-brand;
     position: relative;
 
     &::after{
@@ -47,7 +47,7 @@
         bottom: 10px;
         left: 50%;
         transform: translateX(-50%);
-        background: $blue;
+        background: $brand-primary;
         width: 20px;
         height: 2px;
     }
