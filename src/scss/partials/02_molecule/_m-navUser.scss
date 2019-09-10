@@ -36,11 +36,12 @@
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 1;
-    color: $text-white;
+    color: $text-primary;
 }
 .m-navUser__title{
     @include f-16-primary-semibold;
-    color: $text-white;
+    font-weight: 500;
+    color: $text-primary;
     max-width: 160px;
     overflow: hidden; 
     text-overflow: ellipsis;
