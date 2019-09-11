@@ -26,6 +26,7 @@
     align-items: center;
     cursor: pointer;
     position: relative;
+    font-weight: 500;
 
     &::after{
         content: "";
@@ -53,6 +54,7 @@
 }
 .o-navProducts__linkDesktop{
     @include f-16-primary-semibold;
+    font-weight: 500;
     padding: 0 2rem;
     height: 52px;
     display: flex;
@@ -109,6 +111,7 @@
     width: 100%;
     height: 100%;
     @include f-14-primary-semibold;
+    font-weight: 500;
 }
 
 

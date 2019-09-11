@@ -74,8 +74,8 @@
     font-size: 3rem;
     font-weight: 500;
     position: relative;
-    padding-top: 2rem;
-    margin-bottom: 3rem;
+    padding-top: 2.5rem;
+    margin-bottom: 2rem;
 
     &::before{
         content: '';
@@ -92,4 +92,12 @@
     font-size: 1.6rem;
     line-height: 2;
     margin-bottom: 3rem;
+}
+.o-sectionHometext__imgWrap{
+    height: 420px;
+}
+@media screen and (max-width: 768px){
+    .o-sectionHometext__imgWrap{
+        height: 320px;
+    }
 }

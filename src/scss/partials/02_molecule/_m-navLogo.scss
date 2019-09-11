@@ -16,16 +16,19 @@
 
 @media screen and (max-width:991px){
     .m-navLogo{
-        padding: 0 0 0 10px;
+        padding: 0 0 0 0px;
         flex-grow: 1;
     }
     .m-navLogo__link{
         justify-content: flex-start;
         height: 34px;
     }
+    .m-navLogo__img{
+        height: 80px;
+    }
 }
 @media screen and (max-width:500px){
     .m-navLogo{
-        padding: 0 5px;
+        padding: 0 0px;
     }
 }

@@ -59,9 +59,9 @@
 .m-productCell__title{
     @include f-16-primary-regular;
     text-align: left;
-    font-weight: 700;
+    font-weight: 500;
     margin: 0;
-    padding: 1rem 0 1.5rem 0;
+    padding: 1rem 0 1rem 0;
 }
 .m-productCell__tags{
     position: absolute;
@@ -105,10 +105,17 @@
     @include f-20-primary-semibold;
     color: $text-red;
     line-height: 1;
+
+    span{
+        color: $text-primary;
+        font-size: 12px;
+        font-weight: 400;
+    }
 }
 .m-productCell__delivery{
     flex-grow: 1;
     line-height: 1.2;
+    padding-bottom: 1.5rem;
 }   
 .m-productCell__deliveryText{
     margin: 0;

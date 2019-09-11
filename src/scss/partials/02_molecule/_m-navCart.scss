@@ -55,10 +55,10 @@
     height: 28px;
     width: 28px;
     position: relative;
+    margin-right: 2px;
 }
 .m-navCart__icoNumber{
     @include f-12-dark-regular;
-
     line-height: 1;
     background: $bg-white;
     border: 2px solid $red;
@@ -72,7 +72,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    transform: translateX(40%) translateY(20%);
+    transform: translateX(20%) translateY(10%);
     transition: 0.2s ease all;
 }
 .m-navCart__info{
@@ -212,6 +212,15 @@
 }
 
 @media screen and (max-width:991px){
+    .m-navCart{
+        
+        position: relative;
+        background: $bg-primary;
+
+        &.-active{
+            background: $bg-red;
+        }
+    }
     .m-navCart__desktopLink{
         display: none;
     }
