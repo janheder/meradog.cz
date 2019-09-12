@@ -310,8 +310,23 @@
             </div>
             <p class="m-cartFreeShipping__text">Nakupte ještě za <span class="m-cartFreeShipping__price">5 100 Kč</span> a máte dopravu zdarma</p>
           </div>
+          <h2 class="o-cartDeliveryForm__title">Zvolte způsob dopravy a platby</h2>
+          <div class="o-cartDeliveryForm__item">
+            <div class="o-form__group m-formGroup -radiobutton">
+              <input class="m-formGroup__input" type="radio" name="doprava" id="delivery_form_delivery-1" required><span class="m-formGroup__radiobutton a-radiobutton"></span>
+              <label class="m-formGroup__label -bold" for="delivery_form_delivery-1">Osobní odběr</label>
+              <label class="m-formGroup__price" for="delivery_form_delivery-1">0 Kč</label>
+            </div>
+          </div>
+          <div class="o-cartDeliveryForm__item">
+            <div class="o-form__group m-formGroup -radiobutton">
+              <input class="m-formGroup__input" type="radio" name="doprava" id="delivery_form_delivery-2" required checked><span class="m-formGroup__radiobutton a-radiobutton"></span>
+              <label class="m-formGroup__label -bold" for="delivery_form_delivery-2">GLS</label>
+              <label class="m-formGroup__price" for="delivery_form_delivery-2">149 Kč</label>
+            </div>
+          </div>
           <div class="m-cartButtons"><a class="btn -dark" href="#"><span class="a-btnIcon -rotate180"><span class="a-icon -cheveron -white"></span></span> Zpět do obchodu</a>
-            <button class="btn" type="submit" id="cart-form-submit">Doprava a platba <span class="a-btnIcon"><span class="a-icon -cheveron -white"></span></span></button>
+            <button class="btn" type="submit" id="cart-form-submit">Osobní údaje <span class="a-btnIcon"><span class="a-icon -cheveron -white"></span></span></button>
           </div>
         </form>
       </div>
@@ -321,7 +336,7 @@
           <h3 class="m-cartBarResponsive__price"><span>65 599</span> Kč</h3>
         </div>
         <div class="m-cartBarResponsive__btnWrap">
-          <button class="btn m-cartBarResponsive__btn" onclick="$('#cart-form-submit').trigger('click');">Doprava a platba <span class="a-btnIcon"><span class="a-icon -cheveron -white"></span></span> </button>
+          <button class="btn m-cartBarResponsive__btn" onclick="$('#cart-form-submit').trigger('click');">Osobní údaje <span class="a-btnIcon"><span class="a-icon -cheveron -white"></span></span> </button>
         </div>
       </div>
     </main>

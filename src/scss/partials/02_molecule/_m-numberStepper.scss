@@ -5,7 +5,7 @@
     background: $bg-white;
     color: $text-dark;
     max-width: 140px;
-    border: 1px solid $border-grey;
+    border: 0px solid $border-grey;
 }
 .m-numberStepper__input{
     border: 0;
@@ -14,7 +14,7 @@
     font-size: 1.4rem;
     text-align: center;
     background: transparent;
-    font-weight: 600;
+    font-weight: 500;
     min-width: 140px;
     max-width: 100%;
 }
@@ -58,7 +58,7 @@
 
 
 .m-numberStepper.-dark{
-    background: $bg-white;
+    background: $bg-light;
 }
 
 

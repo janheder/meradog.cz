@@ -89,9 +89,29 @@ html(lang=lang)
                         p.m-cartFreeShipping__text Nakupte ještě za #[span.m-cartFreeShipping__price 5 100 Kč] a máte dopravu zdarma
 
 
+                
+                    h2.o-cartDeliveryForm__title Zvolte způsob dopravy a platby
+
+                    .o-cartDeliveryForm__item
+                        .o-form__group.m-formGroup.-radiobutton
+                            input.m-formGroup__input(type="radio" name="doprava" id="delivery_form_delivery-1" required)
+                            span.m-formGroup__radiobutton.a-radiobutton
+                            label.m-formGroup__label.-bold(for="delivery_form_delivery-1") Osobní odběr
+
+                            label.m-formGroup__price(for="delivery_form_delivery-1") 0 Kč
+
+                    .o-cartDeliveryForm__item
+                        .o-form__group.m-formGroup.-radiobutton
+                            input.m-formGroup__input(type="radio" name="doprava" id="delivery_form_delivery-2" required checked)
+                            span.m-formGroup__radiobutton.a-radiobutton
+                            label.m-formGroup__label.-bold(for="delivery_form_delivery-2") GLS
+                            label.m-formGroup__price(for="delivery_form_delivery-2") 149 Kč
+
+
+
                     .m-cartButtons
                         a.btn.-dark(href="#") #[span.a-btnIcon.-rotate180 #[span.a-icon.-cheveron.-white]] Zpět do obchodu
-                        button.btn(type="submit" id="cart-form-submit") Doprava a platba #[span.a-btnIcon #[span.a-icon.-cheveron.-white]]
+                        button.btn(type="submit" id="cart-form-submit") Osobní údaje #[span.a-btnIcon #[span.a-icon.-cheveron.-white]]
                                
 
             .m-cartBarResponsive
@@ -99,7 +119,7 @@ html(lang=lang)
                     p.m-cartBarResponsive__text Celková cena s DPH
                     h3.m-cartBarResponsive__price #[span 65 599] Kč
                 .m-cartBarResponsive__btnWrap
-                    button.btn.m-cartBarResponsive__btn(onclick="$('#cart-form-submit').trigger('click');") Doprava a platba #[span.a-btnIcon #[span.a-icon.-cheveron.-white]] 
+                    button.btn.m-cartBarResponsive__btn(onclick="$('#cart-form-submit').trigger('click');") Osobní údaje #[span.a-btnIcon #[span.a-icon.-cheveron.-white]] 
 
 
         include partials/_footer.pug 

@@ -1,6 +1,7 @@
 .o-productDescription{
     background: $bg-white;
     font-size: 1.6rem;
+    padding: 4rem;
 }
 .o-productDescription td{
     border: 0;
@@ -10,7 +11,7 @@
     border-top: 0;
 }
 .o-productDescription p{
-    font-weight: 500;
+    font-weight: 400;
 }
 
 @media screen and (max-width:991px){

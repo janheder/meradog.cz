@@ -67,6 +67,7 @@ input{
 }
 .o-form__title{
     @include f-24-primary-semibold;
+    font-weight: 500;
     text-align: left;
     margin: 0;
     padding: 0;
@@ -132,7 +133,7 @@ input{
 
     &.-radiobutton, &.-checkbox, &.-switch{
         background: $bg-white;
-        border: 1px solid $border-grey;
+        border: 0px solid $border-grey;
         min-height: 5.4rem;
         display: flex;
         flex-direction: row;
@@ -182,7 +183,7 @@ input{
             font-weight: 500;
 
             &.-bold{
-                font-weight: 600;
+                font-weight: 500;
             }
         }
         .m-formGroup__text{
@@ -211,6 +212,7 @@ input{
             text-align: right;
             white-space: nowrap;
             font-weight: 500;
+            margin: 0;
         }
     }
     
@@ -312,10 +314,11 @@ input{
 .m-formGroup__input{
     height: 5.4rem;
     @include f-16-primary-semibold;
+    font-weight: 400;
     padding: 0 2rem;
     border: 0;
     background: $bg-white;
-    border: 1px solid $border-grey;
+    border: 0px solid $border-grey;
     border-radius: $border-radius-primary;
     width: 100%;
 

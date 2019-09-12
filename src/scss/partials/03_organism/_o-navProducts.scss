@@ -296,8 +296,8 @@
 
 @media screen and (min-width:992px){
     .navProducts__toggle {
-        background: $bg-light;
-        font-weight: 700;
+        background: $bg-white;
+        font-weight: 500;
         color: $text-primary;
         padding: 0 2rem;
         height: 5.4rem;
@@ -307,6 +307,7 @@
         margin-top: 2rem;
         font-size: 1.6rem;
         cursor: pointer;
+        max-width: 260px;
     }
     .navProducts--absolute{
         position: relative;

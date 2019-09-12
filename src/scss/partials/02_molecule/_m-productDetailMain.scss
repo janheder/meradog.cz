@@ -4,7 +4,8 @@
 .m-productDetailMain__title{
     text-align: left;
     line-height: 1.25;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
 }
 .m-productDetailMain__misc{
     display: flex;
@@ -101,15 +102,17 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 0rem;
 }
 .m-productDetailMain__priceOld{
     @include f-14-dark-semibold;
+    font-weight: 500;
     text-decoration: line-through;
 }
 .m-productDetailMain__priceMain{
     @include f-30-dark-semibold;
     color: $text-red;
+    font-weight: 600;
     margin: 0;
     line-height: 1;
 }
@@ -142,14 +145,15 @@
 }
 .m-productDetailMain__stockText{
     @include f-14-dark-regular;
+    font-size: 1.6rem;
     color: $text-green;
     margin-left: 10px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .m-productDetailMain__id{
     @include f-14-dark-regular;
     margin-bottom: 0.5rem;
-    font-weight: 600;
+    font-weight: 500;
     padding-right: 2rem;
 }
 

@@ -2,7 +2,7 @@
     background: $bg-white;
     position: relative;
     padding: 0;
-    border: 1px solid $border-grey;
+    border: 0px solid $border-grey;
 }
 .o-filter__responsive{
     display: none;
@@ -37,8 +37,8 @@
     flex-direction: row;
     position: relative;
 }
-.o-filter__single{
-
+.o-filter__single:last-child{
+    flex-grow: 1;
 }
 .o-filter__link{
     display: flex;

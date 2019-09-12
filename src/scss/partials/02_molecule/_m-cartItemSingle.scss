@@ -51,7 +51,8 @@
 }
 .m-cartItemSingle__name{
     margin-bottom: 0rem;
-    @include f-16-primary-semibold;
+	@include f-16-primary-semibold;
+	font-weight: 500;
 }
 .m-cartItemSingle__tags{
     margin-bottom: 1rem;
@@ -66,7 +67,8 @@
 .m-cartItemSingle__stock{
 	color: $text-green;
 	margin: 0;
-    @include f-14-primary-semibold;
+	@include f-14-primary-semibold;
+	font-weight: 500;
     color: $text-green;
 }	
 .m-cartItemSingle__inner{
@@ -107,7 +109,7 @@
 .m-cartItemSingle__price{
 	font-size: 1.6rem;
     line-height: 1;
-    font-weight: 600;
+    font-weight: 500;
     margin: 0;
 }
 /*
@@ -119,7 +121,7 @@
 	color: $text-red;
     font-size: 1.8rem;
     line-height: 1;
-    font-weight: 600;
+    font-weight: 500;
     margin: 0;
 }
 .m-cartItemSingle__delete-wrap{

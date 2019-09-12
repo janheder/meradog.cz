@@ -29,6 +29,7 @@
 }
 .o-modal__title{
     @include f-24-primary-semibold;
+    font-weight: 500;
 }
 .modal-header .close{
     padding: 0;
@@ -36,8 +37,8 @@
     background: $bg-white;
 }
 .o-modal__close{
-    height: 40px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
     display: flex;
     flex-direction: row;
     justify-content: center;

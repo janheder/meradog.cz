@@ -5,11 +5,11 @@
 .btn{
     @include f-16-white-regular;
     font-weight: 400;
-    min-height: 5.4rem;
+    min-height: 5.8rem;
     height: auto;
-    padding: 0rem 0rem 0rem 3rem;
+    padding: 0rem 3rem 0rem 3rem;
     background: $brand-primary;
-    border-radius: 5.4rem;
+    border-radius: 5.8rem;
     position: relative;
     border: 0;
     cursor: pointer;
@@ -34,17 +34,18 @@
         margin-left: 1.2rem;
         flex-shrink: 0;
         background: rgba(0,0,0,0.1);
+        margin-right: -3rem;
 
         &.-rotate180{
             transform: rotate(180deg);
-            margin-left: 0;
+            margin-left: -3rem;
             margin-right: 1.2rem;
         }
     }
     .a-icon{
         display: inline-block;
-        height: 8px;
-        width: 5px;
+        height: 10px;
+        width: 6px;
     }
     &:hover, &:active, &:focus{
         color: $text-white;
