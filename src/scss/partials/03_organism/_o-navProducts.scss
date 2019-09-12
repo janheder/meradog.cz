@@ -157,6 +157,11 @@
             transform: translate(-50%, -50%);
         }
     }
+    a.o-navProducts__link{
+        &::before, &::after{
+            content: none;
+        }
+    }
     .o-navProducts__link[aria-expanded="true"]::after, .o-navProducts__linkDesktop[aria-expanded="true"]::after{
         display: none;
     }

@@ -53,14 +53,14 @@
     cursor: pointer;
 }
 .m-emailSubscribe__inlineText{
-    font-size: 14px;
+    font-size: 13px;
     margin-left: 1rem;
-    font-weight: 500;
+    font-weight: 400;
 
     a{
         color: $text-primary;
-        font-size: 14px;
-        font-weight: 500;
+        font-size: 13px;
+        font-weight: 400;
     }
 }
 
@@ -97,7 +97,7 @@
 }
 
 .m-questionsContact{
-    padding: 6rem 0 6rem 4rem;
+    padding: 6rem 0 6rem 0rem;
 }
 .m-questionsContact__title{
     font-size: 2.2rem;
@@ -125,6 +125,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media screen and (max-width:768px){
+    .m-questionsContact{
+        padding: 0rem 0 6rem 0rem;
     }
 }
 

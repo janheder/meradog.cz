@@ -198,6 +198,39 @@ html(lang=lang)
 
         include partials/_news-section.pug
         
+        section.o-sectionFooterIndex
+            .container
+                .row
+                    .col-12.col-md-7
+                        h2.o-sectionFooterIndex__title Můžete nás navštívit
+                        .row
+                            .col-12.col-md-6
+                                .o-sectionFooterIndex__imgWrap
+                                    img.o-sectionFooterIndex__img(src=URLbase+"img/footer-index-store.png")
+                            .col-12.col-md-6
+                                .o-sectionFooterIndex__textWrap
+                                    h3.o-sectionFooterIndex__subTitle Kancelář a vzorková prodejna
+                                    strong.o-sectionFooterIndex__strong Adresa
+                                    p.o-sectionFooterIndex__text Mlýnská 369
+                                    p.o-sectionFooterIndex__text Bystřice pod Hostýnem
+
+                                    strong.o-sectionFooterIndex__strong Otevírací doba
+                                    p.o-sectionFooterIndex__text PO-PÁ 9:00-12:00 a 13:00-16:30
+                    
+                    .col-12.col-md-5
+                        h2.o-sectionFooterIndex__title Certifikáty a ověření
+                        .row
+                            .col-12.col-md-7
+                                img.o-sectionFooterIndex__logo.-large(src=URLbase+"img/index-footer-logo1.png")
+                            .col-12.col-md-5
+                                .o-sectionFooterIndex__logoWrap
+                                    img.o-sectionFooterIndex__logo(src=URLbase+"img/index-footer-logo2.png")
+                                    img.o-sectionFooterIndex__logo(src=URLbase+"img/index-footer-logo3.png")
+                                    img.o-sectionFooterIndex__logo(src=URLbase+"img/index-footer-logo4.png")
+                                .o-sectionFooterIndex__logoWrap
+                                    img.o-sectionFooterIndex__logo(src=URLbase+"img/heureka.png")
+
+
         include partials/_footer.pug
 
         include partials/_js-include.pug

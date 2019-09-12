@@ -13,8 +13,6 @@
     border: 0;
     position: relative;
     z-index: 1;
-
-
 }
 .m-tabsNav__link{
     background: transparent;
@@ -27,7 +25,7 @@
     align-items: center;
     @include f-16-semibold-regular;
     border-bottom: 1px solid transparent;
-    font-weight: 700;
+    font-weight: 500;
 
     &:hover, &:active, &:focus{
         text-decoration: none;
