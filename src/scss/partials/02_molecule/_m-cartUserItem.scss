@@ -3,7 +3,7 @@
     position: relative;
     height: 100%;
     background: $bg-white;
-    border: 1px solid $border-grey;
+    border: 0px solid $border-grey;
     padding: 3rem;
 }
 .m-cartUserItem__top{
@@ -13,6 +13,7 @@
 }
 .m-cartUserItem_title{
     @include f-18-primary-semibold;
+    font-weight: 500;
     line-height: 1;
     text-align: left;;
     margin-bottom: 0px;
@@ -24,7 +25,11 @@
 .m-cartUserItem__bottom{
     background: $bg-white;
     padding: 0px;
-    column-count: 3;
+    column-count: 2;
+
+    &.-w100{
+        column-count: 4;
+    }
 }
 .m-cartUserItem__small{
     @include f-12-dark-regular;
@@ -33,6 +38,7 @@
 }
 .m-cartUserItem__text{
     @include f-16-primary-semibold;
+    font-weight: 500;
     line-height: 1;
 }
 .m-cartUserItem__row{
