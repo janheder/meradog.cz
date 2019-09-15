@@ -8,21 +8,21 @@ html(lang=lang)
             include partials/_navMain.pug
         section.o-cartNav
             .container.o-cartNav__container
-                .o-cartNav__single.-active
+                .o-cartNav__single.-complete
                     .o-cartNav__number 1
                     .o-cartNav__title Nákupní košík
                     
-                .o-cartNav__single
+                .o-cartNav__single.-complete
                     .o-cartNav__number 2
-                    .o-cartNav__title Doprava a platba
-                    
-                .o-cartNav__single
-                    .o-cartNav__number 3
                     .o-cartNav__title Osobní údaje
+                    
+                .o-cartNav__single.-active
+                    .o-cartNav__number 3
+                    .o-cartNav__title Shrnutí objednávky
                     
                 .o-cartNav__single
                     .o-cartNav__number 4
-                    .o-cartNav__title Shrnutí objednávky
+                    .o-cartNav__title Dokončení nákupu
 
         section.o-cartNavResponsive
             a.o-cartNavResponsive__link.-prev.-disabled(href="/kosik.html?krok=3")
@@ -96,14 +96,11 @@ html(lang=lang)
                     .m-cartDeliveryOverview
 
                         .m-cartDeliveryOverview__wrap
-                            h5.m-cartDeliveryOverview__text Způsob dopravy
-                            p.m-cartDeliveryOverview__title Česká pošta:
+                            h5.m-cartDeliveryOverview__text Způsob dopravy a platby
+                            p.m-cartDeliveryOverview__title Česká pošta dobírka:
                             h3.m-cartDeliveryOverview__price #[span.m-cartPriceOverview__priceNumber 75] Kč
 
-                        .m-cartDeliveryOverview__wrap
-                            h5.m-cartDeliveryOverview__text Způsob platby
-                            p.m-cartDeliveryOverview__title Převod na účet:
-                            h3.m-cartDeliveryOverview__price #[span.m-cartPriceOverview__priceNumber 0] Kč
+
 
                     .m-cartPriceOverview
                         p.m-cartPriceOverview__text Celková cena s DPH:

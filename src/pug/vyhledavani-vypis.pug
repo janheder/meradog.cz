@@ -8,44 +8,33 @@ html(lang=lang)
             include partials/_navMain.pug
         .container
             .row
-                .col-12.col-md-3
-                    .navProducts__toggle Menu kategorií
+                .col-12.col-lg-3.navMainCol    
+                    include partials/_navProducts.pug
 
-                    .navProducts--absolute
-                        include partials/_navProducts.pug
-                .col-12.col-md-9    
-                    include partials/_breadcrumb.pug
+                .heroCol
 
-        section.o-pageHeading
+                    section.o-pageHeading.-product
+                        include partials/_breadcrumb-transparent.pug
+                        .o-pageHeading__container
+                            h1.o-pageHeading__title Vyhledávání pro: abcd
 
-            .container.o-pageHeading__container
-                h1.o-pageHeading__title Výsledky vyhledávání pro výraz: "postel"
+                    
+                    main
+    
 
-        
-        main
-            .container
+                        .o-productPagination
+                            .o-productPagination__resultNumber 1 - 30 z 322 produktů
+                
 
-
-                .o-productPagination
-                    .o-productPagination__resultNumber 1 - 30 z 322 produktů
-                    .o-productPagination__resultLimit 
-                        span.o-productPagination__resultLimitText Produktů na stránku
-                        a.o-productPagination__resultLimitButton.-active(href="#") 20
-                        a.o-productPagination__resultLimitButton(href="#") 60
-
-                    include partials/_pagination.pug
+                            include partials/_pagination.pug
 
 
-                .o-productGrid
-                    - for (var i=0; i<20; i++)
-                        include partials/_single-product-cell.pug
+                        .o-productGrid
+                            - for (var i=0; i<20; i++)
+                                include partials/_single-product-cell.pug
 
 
-                .o-productBottomButton
-                    a.btn.o-productBottomButton__btn(href="#") Dalších 20 produktů
-                    include partials/_pagination.pug
-
- 
+              
 
         include partials/_footer.pug
 

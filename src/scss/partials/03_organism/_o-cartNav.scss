@@ -42,20 +42,20 @@
 
 .o-cartNav__single.-active{
     .o-cartNav__title{
-        color: $text-primary;
+        color: $text-red;
     }
     .o-cartNav__number{
         color: $text-white;
-        background: $green;
+        background: $red;
     }
 }
 .o-cartNav__single.-complete{
     .o-cartNav__title{
-        color: $text-primary;
+        color: $text-green;
     }
     .o-cartNav__number{
         color: $text-white;
-        background: $blue;
+        background: $green;
     }
     &:hover, &:active, &:focus{
         text-decoration: none;

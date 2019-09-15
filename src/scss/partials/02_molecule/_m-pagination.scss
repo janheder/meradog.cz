@@ -13,8 +13,8 @@
         content: none;
     }
     &.-active .m-pagination__link{
-        background: $bg-light;
-        color: $text-primary;
+        background: $bg-red;
+        color: $text-white;
     }
     &.-disabled .m-pagination__link{
         background: $bg-white;
@@ -26,7 +26,7 @@
     padding: 0px 15px;
     color: $text-primary;
     border: 0;
-    background: transparent;
+    background: $bg-white;
     border-radius: $border-radius-primary;
     height: 40px;
     display: flex;
@@ -35,10 +35,15 @@
     align-items: center;
 
     &:hover, &:active, &:focus{
-        background: $bg-light;
-        color: $text-brand;
+        background: $bg-red;
+        color: $text-white;
     }
 }
 .m-pagination__icon{
     opacity: 0.5
+}
+.page-item:first-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: $border-radius-primary;
+    border-bottom-left-radius: $border-radius-primary;
 }
