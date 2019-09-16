@@ -47,6 +47,7 @@
     align-items: center;
     min-height: 4rem;
     padding: 12px 2rem;
+    flex-wrap: wrap;
 
     &:hover, &:active, &:focus{
         background: $bg-white;

@@ -147,3 +147,56 @@
     
     }
 }
+
+
+
+.a-floatingBanner{
+    position: fixed;
+    right: 0;
+    top: 20%;
+    background: $bg-white;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:hover, &:active, &:focus{
+        text-decoration: none;
+        box-shadow: $box-shadow-primary;
+    }
+}
+.a-floatingBanner__img{
+
+}
+.a-floatingBanner__title{
+    font-size: 1.8rem;
+    text-align: center;
+    color: $text-primary;
+    line-height: 1.1;
+    margin-top: 2rem;
+
+    span{
+        font-size: 2rem;
+        display: block;
+    }
+}
+.a-floatingBanner__btn{
+    background: rgba(203,0,27,0.1);
+    color: $text-red;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 20px;
+    border-radius: 36px;
+    height: 36px;
+    display: flex;
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 991px){
+    .a-floatingBanner{
+        display: none;
+    }
+}
