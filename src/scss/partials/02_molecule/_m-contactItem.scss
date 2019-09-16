@@ -4,16 +4,17 @@
     padding: 20px 0;
 }
 .m-contactItem__title{
-    background: $bg-dark;
-    @include f-18-white-semibold;
-    padding: 15px 20px;
+
+    @include f-24-primary-semibold;
+    font-weight: 500;
+    padding: 0;
     margin: 0;
     border-top-right-radius: $border-radius-primary;
     border-top-left-radius: $border-radius-primary;
 }
 .m-contactItem_content{
-    padding: 20px;
-    background: $bg-white;
+    padding: 20px 0;
+    background: transparent;
     height: 100%;
     border-bottom-right-radius: $border-radius-primary;
     border-bottom-left-radius: $border-radius-primary;
